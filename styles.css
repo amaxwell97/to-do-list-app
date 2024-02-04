@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(to bottom right, #1B377B, #3B1250);
+}
+
 .list-container {
     background-color: #fff;
     min-height: 500px;
