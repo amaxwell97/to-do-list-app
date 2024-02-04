@@ -5,13 +5,17 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background: linear-gradient(to bottom right, #1B377B, #3B1250);
 }
 
 .list-container {
     background-color: #fff;
-    min-height: 500px;
-    min-width: 800px;
+    min-height: 200px;
+    width: 500px;
     margin: 50px auto 0;
 }
