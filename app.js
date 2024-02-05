@@ -1,4 +1,5 @@
 const addButton = document.querySelector('#add-button');
+const unorderedList = document.querySelector('#unordered-list');
 
 const addTask = () => {
     let newTask = document.querySelector('#add-task');
@@ -6,7 +7,8 @@ const addTask = () => {
 
     if (newTask == '') {
         errorMessage.style.display = 'block';
-        return;
+    } else {
+
     }
 }
 
