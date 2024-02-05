@@ -1,6 +1,6 @@
 const addButton = document.querySelector('#add-button');
 
-addButton.addEventListener('click', () => {
+const addTask = () => {
     let newTask = document.querySelector('#add-task');
     const errorMessage = document.querySelector('#error-message');
 
@@ -8,4 +8,8 @@ addButton.addEventListener('click', () => {
         errorMessage.style.display = 'block';
         return;
     }
+}
+
+addButton.addEventListener('click', () => {
+    
 })
