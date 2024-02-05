@@ -22,3 +22,21 @@ body {
     padding-top: 30px;
     border-radius: 10px;
 }
+
+.list-title {
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-content: center;
+}
+
+.list-title p {
+    display: flex;
+    align-items: center;
+}
+
+.list-title img {
+    width: 25px;
+    margin-left: 8px;
+}
