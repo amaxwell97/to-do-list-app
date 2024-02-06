@@ -11,7 +11,6 @@ const addTask = (newTask) => {
         errorMessage.style.display = 'block';
     } else {
         newListItem.textContent = newTask;
-        console.log(newListItem);
         unorderedList.appendChild(newListItem);
     }
 }
