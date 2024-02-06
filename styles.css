@@ -77,4 +77,9 @@ body {
 #unordered-list li {
     list-style-type: none;
     margin-left: 50px;
+    display: flex;
+}
+
+#unordered-list li input {
+    margin-right: 10px;
 }
