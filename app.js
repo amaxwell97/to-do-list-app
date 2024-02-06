@@ -6,12 +6,15 @@ const taskArray = [];
 const addTask = (newTask) => {
     const errorMessage = document.querySelector('#error-message');
     const newListItem = document.createElement('li');
+    const listItemCheck = document.createElement('input');
+    listItemCheck.type = 'checkbox';
 
     if (newTask == '') {
         errorMessage.style.display = 'block';
     } else {
-        newListItem.textContent = newTask;
         unorderedList.appendChild(newListItem);
+        newListItem.appendChild(listItemCheck);
+        newListItem.textContent = newTask;
     }
 }
 
