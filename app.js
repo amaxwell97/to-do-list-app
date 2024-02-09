@@ -26,13 +26,13 @@ const addTask = (newTask) => {
     }
 }
 
-// const checkOffTask = () => {
-//     taskArray.forEach((task) => {
-//         task.addEventListener('click', () {
-//             task.itemCheck.src
-//         })
-//     })
-// }
+const checkOffTask = () => {
+    taskArray.forEach((task) => {
+        task.addEventListener('click', () => {
+            task.itemCheck = 'http://127.0.0.1:5500/to-do-list-app-images/checked.png';
+        })
+    })
+}
 
 addButton.addEventListener('click', () => {
     addTask(newTask.value);
