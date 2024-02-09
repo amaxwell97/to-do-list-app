@@ -76,10 +76,13 @@ body {
 
 #unordered-list li {
     list-style-type: none;
-    margin-left: 50px;
+    margin-left: 10px;
     display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-#unordered-list li input {
+#unordered-list li img {
     margin-right: 10px;
+    width: 25px;
 }
