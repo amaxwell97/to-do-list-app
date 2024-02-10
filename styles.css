@@ -72,11 +72,13 @@ body {
 
 #unordered-list {
     margin-top: 30px;
+    padding-bottom: 20px;
 }
 
 #unordered-list li {
     list-style-type: none;
     margin-left: 10px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -85,4 +87,13 @@ body {
 #unordered-list li img {
     margin-right: 10px;
     width: 25px;
+}
+
+.completed-task img {
+    content: url(http://127.0.0.1:5500/to-do-list-app-images/checked.png);
+}
+
+.completed-task p {
+    color: #555650;
+    text-decoration: line-through;
 }
