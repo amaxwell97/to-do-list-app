@@ -83,17 +83,3 @@ body {
     align-items: center;
     cursor: pointer;
 }
-
-#unordered-list li img {
-    margin-right: 10px;
-    width: 25px;
-}
-
-.completed-task img {
-    content: url(http://127.0.0.1:5500/to-do-list-app-images/checked.png);
-}
-
-.completed-task p {
-    color: #555650;
-    text-decoration: line-through;
-}
