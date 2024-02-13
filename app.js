@@ -5,13 +5,16 @@ const addTask = () => {
     const newTask = document.querySelector('#add-task');
     const errorMessage = document.querySelector('#error-message');
     const newListItem = document.createElement('li');
-    const span = '\u2717';
+    const span = document.createElement('span');
 
     if (newTask.value == '') {
         errorMessage.style.display = 'block';
     } else {
-        newListItem.innerText = `${newTask.value} ${span}`;
+        newListItem.innerText = `${newTask.value}`;
+        span.innerText = `\u2717`;
+        span.setAttribute('id', 'delete-button');
         unorderedList.appendChild(newListItem);
+        newListItem.appendChild(span);
         errorMessage.style.display = 'none';
         newTask.value = '';
     }
