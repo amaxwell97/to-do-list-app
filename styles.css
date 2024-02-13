@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
     box-sizing: border-box;
 }
 
@@ -79,8 +79,11 @@ body {
     list-style-type: none;
     margin-left: 40px;
     margin-bottom: 25px;
+    margin-right: 50px;
     cursor: pointer;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .unordered-list li::before {
@@ -88,7 +91,6 @@ body {
     background: url(/to-do-list-app-images/unchecked.png) no-repeat;
     background-size: 25px;
     position: absolute;
-    display: block;
     top: -3px;
     left: -35px;
     width: 25px;
@@ -104,9 +106,12 @@ li.completed-task::before {
     background: url(/to-do-list-app-images/checked.png) no-repeat;
     background-size: 25px;
     position: absolute;
-    display: block;
     top: -3px;
     left: -35px;
     width: 25px;
     height: 25px;
+}
+
+#delete-button {
+    text-decoration: none;
 }
