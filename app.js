@@ -12,7 +12,6 @@ const addTask = () => {
     } else {
         newListItem.innerText = `${newTask.value}`;
         span.innerText = `\u2717`;
-        span.setAttribute('id', 'delete-button');
         unorderedList.appendChild(newListItem);
         newListItem.appendChild(span);
         errorMessage.style.display = 'none';
