@@ -24,9 +24,13 @@ addButton.addEventListener('click', () => {
 })
 
 const checkOffTask = (ev) => {
-    ev.target.classList.toggle('completed-task');
+    if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('completed-task');
+    } else if (ev.target.tagName === 'SPAN') {
+        ev.target.parentElement.remove();
+    }
 }
 
 unorderedList.addEventListener('click', (ev) => {
     checkOffTask(ev);
-})
+}, false)
