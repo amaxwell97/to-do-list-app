@@ -111,7 +111,3 @@ li.completed-task::before {
     width: 25px;
     height: 25px;
 }
-
-#delete-button {
-    text-decoration: none;
-}
