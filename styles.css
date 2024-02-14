@@ -82,8 +82,6 @@ body {
     margin-right: 50px;
     cursor: pointer;
     position: relative;
-    display: flex;
-    justify-content: space-between;
 }
 
 .unordered-list li::before {
@@ -110,4 +108,24 @@ li.completed-task::before {
     left: -35px;
     width: 25px;
     height: 25px;
+}
+
+li span {
+    position: absolute;
+    /* right: 50px;
+    width: 25px;
+    height: 25px; */
+    text-align: center;
+    right: 0;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    color: red;
+}
+
+li span:hover {
+    background-color: #EBEDEE;
+    border-radius: 50%;
 }
