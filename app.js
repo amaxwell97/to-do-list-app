@@ -15,9 +15,12 @@ const addTask = () => {
         unorderedList.appendChild(newListItem);
         newListItem.appendChild(span);
         errorMessage.style.display = 'none';
-        newTask.value = '';
     }
+    newTask.value = '';
+    saveTask();
 }
+
+console.log(unorderedList);
 
 addButton.addEventListener('click', () => {
     addTask();
@@ -26,11 +29,23 @@ addButton.addEventListener('click', () => {
 const checkOffTask = (ev) => {
     if (ev.target.tagName === 'LI') {
         ev.target.classList.toggle('completed-task');
+        saveTask();
     } else if (ev.target.tagName === 'SPAN') {
         ev.target.parentElement.remove();
+        saveTask();
     }
 }
 
-unorderedList.addEventListener('click', (ev) => {
+unorderedList.addEventListener('click', function(ev) {
     checkOffTask(ev);
 }, false)
+
+function saveTask() {
+    localStorage.setItem('task', unorderedList.innerHTML);
+}
+
+function showTask() {
+    unorderedList.innerHTML = localStorage.getItem('task');
+}
+
+showTask();
